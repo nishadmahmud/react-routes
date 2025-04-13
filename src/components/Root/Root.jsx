@@ -1,12 +1,18 @@
 import React from 'react';
 import Header from '../Header/Header';
 import { Outlet } from 'react-router';
+import Footer from '../Footer/Footer';
+import SideBar from '../SideBar/SideBar';
 
 const Root = () => {
     return (
-        <div>
+        <div className='w-[90%] m-auto'>
             <Header></Header>
-            <Outlet></Outlet>
+            <div className='flex gap-5'>
+                <SideBar></SideBar>
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
