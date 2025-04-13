@@ -39,12 +39,12 @@ const Header = () => {
           Users
         </NavLink>
         <NavLink
-          to="/users2"
+          to="/Posts"
           className={({ isActive }) =>
             isActive ? "text-red-500" : "text-black"
           }
         >
-          Users2
+          Posts
         </NavLink>
       </nav>
     </div>

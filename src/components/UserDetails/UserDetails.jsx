@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData } from "react-router";
 
 const UserDetails = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  const user = useLoaderData();
+  const { name, website } = user;
+  return (
+    <div>
+      <h3>User Details Here</h3>
+      <h5>Name: {name}</h5>
+      <p>Website: {website}</p>
+    </div>
+  );
 };
 
 export default UserDetails;
